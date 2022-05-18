@@ -46,65 +46,6 @@ ramp-headphones-1 = 
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-[module/bna]
-type = custom/text
-
-content = " NA"
-content-prefix = 
-content-prefix-font = 2
-content-prefix-foreground = ${color.RED}
-content-padding = 0
-
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-[module/backlight]
-type = internal/xbacklight
-
-card = intel_backlight
-
-format =  <ramp> <label>
-
-label = %percentage%%
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
-ramp-5 = 
-ramp-6 = 
-ramp-7 = 
-ramp-8 = 
-ramp-9 = 
-ramp-font = 2
-
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
-[module/brightness]
-type = internal/backlight
-
-card = ${system.graphics_card}
-
-enable-scroll = true
-
-format = <ramp> <label>
-
-label = %percentage%%
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-ramp-3 = 
-ramp-4 = 
-ramp-5 = 
-ramp-6 = 
-ramp-7 = 
-ramp-8 = 
-ramp-9 = 
-ramp-font = 2
-
-;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
-
 [module/bspwm]
 type = internal/bspwm
 
@@ -142,19 +83,19 @@ label-monitor = %name%
 ;   label-dimmed-urgent
 ;   label-dimmed-empty
 ;label-dimmed-foreground = ${color.FOREGROUND}
-;label-dimmed-underline = ${color.YELLOW}
+;label-dimmed-underline = ${color.FOREGROUND}
 ;label-dimmed-focused-background = ${color.BACKGROUND}
 
 label-focused = %name%
-label-focused-foreground = ${color.BLUE}
+label-focused-foreground = ${color.FOREGROUND}
 label-focused-background = ${color.BACKGROUND}
-label-focused-underline = ${color.BLUE}
+label-focused-underline = ${color.FOREGROUND}
 label-focused-padding = 1
 
 label-occupied = %name%
-label-occupied-foreground = ${color.GREEN}
+label-occupied-foreground = ${color.FOREGROUND}
 label-occupied-background = ${color.BACKGROUND}
-;label-occupied-underline = ${color.GREEN}
+;label-occupied-underline = ${color.FOREGROUND}
 label-occupied-padding = 1
 
 label-urgent = %name%
@@ -170,7 +111,7 @@ label-empty-padding = 1
 ; Separator in between workspaces
 label-separator = " "
 label-separator-padding = 0
-label-separator-foreground = ${color.ALTBLACK}
+label-separator-foreground = ${color.BACKGROUND}
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
@@ -178,7 +119,7 @@ label-separator-foreground = ${color.ALTBLACK}
 type = internal/bspwm
 
 format = <label-mode>
-format-background = ${color.YELLOW}
+format-background = ${color.FOREGROUND}
 format-foreground = ${color.BACKGROUND}
 format-padding = 1
 
@@ -289,7 +230,7 @@ ramp-signal-2 = 
 ramp-signal-3 = 
 ramp-signal-4 = 
 ramp-signal-font = 3
-ramp-signal-foreground = ${color.CYAN}
+ramp-signal-foreground = ${color.FOREGROUND}
 
 ;; _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
