@@ -33,7 +33,7 @@ radius-top = 0.0
 radius-bottom = 0.0
 
 line-size = 2
-line-color = ${color.BLUE}
+line-color = ${color.FOREGROUND}
 
 border-size = 4
 border-color = ${color.BACKGROUND}
